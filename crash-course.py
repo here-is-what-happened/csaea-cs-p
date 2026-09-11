@@ -74,3 +74,53 @@ print(end + "\n")
 print(math.sqrt(14))
 print(math.floor(3.65))
 print(math.pow(2, 4))
+print('      ')
+
+# CONDITIONAL
+
+t = True
+f = False
+
+if f:
+    print("Reached the first condition")
+elif t:
+    print("Reached second condition")
+else:
+    print("Reached else")
+
+if 1 > 1 and 1 + 1 == 2:
+    print("Reached the first condition")
+elif 45 + 2 < 4 or 1234567890 == 987654321:
+    print("Reached second condition")
+elif 9 == 9:
+    print("Reached the third condition")
+else:
+    print("Reached else")
+
+print("                                          ")
+# LISTS
+
+# INDEX: 0  1   2  3   4
+nums = [34, 52, 3, 64, 32]
+print(nums[2])
+print(nums[3])
+
+
+
+print("          ")
+
+
+words = []
+
+words.append("Word 1")
+words.append("Word 2")
+words.append("Word 3")
+
+print(words)
+
+words.remove("Word 1")
+words.insert(0, "Word 4")
+words[1] = "Word 5"
+length = len(words)
+print(words)
+print(length)
