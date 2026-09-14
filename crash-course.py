@@ -43,19 +43,19 @@ print(isEqual)
 f = False
 t = True
 
-print("            ")
+print("")
 print(not f)
 print(f or t)
 print(f or t and not f)
 print(f and t)
-print("                           ")
+print("")
 
 
 # CASTING ()
 
 g = int(5.5)
 print(g)
-print("          ")
+print("")
 
 
 # STRINGS
@@ -97,7 +97,7 @@ elif 9 == 9:
 else:
     print("Reached else")
 
-print("                                          ")
+print("")
 # LISTS
 
 # INDEX: 0  1   2  3   4
@@ -107,7 +107,7 @@ print(nums[3])
 
 
 
-print("          ")
+print("")
 
 
 words = []
@@ -124,3 +124,49 @@ words[1] = "Word 5"
 length = len(words)
 print(words)
 print(length)
+print(" ")
+
+# Iteration
+
+# For Loop
+# A for loop will iterate over a range
+# range(stop), range(start, stop) ...
+
+for i in range(5):
+    print(i)
+
+animals = ["sheep", "deer", "moose"]
+print(f"List: {animals}")
+
+for animal in animals:
+    print(f"We saw a {animal}")
+
+
+nums = [5.1, 2.2, 5.3, 3.4, 8.5]
+# for num in nums:
+#     print(num)
+
+for i in range(len(nums)):
+    print(nums[i])
+
+# Debugging
+# print(len(nums))
+# print(range(5))
+# for i in range(0, 5):
+#     print(i)
+
+# While loop
+
+# iterates while a condition is true
+# when the condition becomes false, it stops
+
+x = 5
+while x < 10:
+    print(x)
+    x += 1
+
+t = True
+f = False
+
+while t or f:
+    print("hi")
