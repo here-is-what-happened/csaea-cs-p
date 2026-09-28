@@ -66,3 +66,20 @@ print(f"\n{passed} out of {total_students} students passed the test")
 area = 49
 amount_of_fence = 4*(math.sqrt(area))
 print(f"Fence needed in ft : {amount_of_fence}")
+
+# challenge 17, parking meter calculator
+
+minutes_parked = 50
+block_length = 15
+cost_per_block = 1
+
+final_cost = math.ceil(minutes_parked / block_length)
+print(f"\nYou owe ${final_cost} for parking")
+
+# challenge 18, playlist swap
+
+playlist = ["Intro", "Song A", "Song B", "Finale"]
+
+playlist[0], playlist[-1] = playlist[-1], playlist[0]
+
+print(playlist)
