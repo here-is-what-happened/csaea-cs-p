@@ -82,11 +82,24 @@ first = "Ada"
 last = "Lovelace"
 school = "CSAEA"
 
+print(f"\nHello, my name is {first} {last} from {school}")
+
+# challenge  9, shopping cart
+
+cart = [12, 5, 30, 8]
+item = 0
+total_price = 0
+
+for item in cart:
+    item += 1
+    total_price += item
+
+print(f"\nTotal : ${total_price} \nItems : {item} items")
 
 
 # challenge 11, rocket launch count down
 
-print("\n")
+print("")
 for i in range(10, 1, -1):
     print(i)
 print("The rocket has launched!")
