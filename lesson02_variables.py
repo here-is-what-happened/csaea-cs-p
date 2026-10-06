@@ -48,11 +48,12 @@ print(f"My name is {x}, and I am {y} of age. I work at {z}")
 # Use another variable to increase 'count' by 5
 # Print the result
 
-total = 0
+
 count = 10
 increase_count = 5
-count + increase_count = total
-print(total)
+count = count + increase_count
+print("")
+print(count)
 
 
 # Challenge 3: Swap Variables  
@@ -60,3 +61,13 @@ print(total)
 # Swap the values so that x = "hello" and y = 4. 
 # Use a temporary variable.  
 # Hint: You will need to create one new variable. 
+
+
+num = 4
+y = "hello"
+
+temp_variable = y
+y = num
+num = temp_variable
+
+print(f"\ny = {y} \nnum = {num}")
