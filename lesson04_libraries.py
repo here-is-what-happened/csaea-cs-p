@@ -37,15 +37,79 @@ print(f"\nThe radius of the circle is {radius}. \nThe area of the circle is {are
 # Use math library to round the float UP to an integer. 
 # BONUS CHALLENGE: Make your random number output between 1 and 10. 
 
-seed = 6
-
-seed = seed/6.7
-seed = seed - 800
-seed = seed % 10
-seed = math.ceil(seed)
-
-#  seed = random.randint(0, 10000)
-#  seed = math.ceil(seed)
+# Simple version:
 
 print("")
-print(seed)
+for n in range(5):
+    seed = 23345
+    calcs = seed + 2234 * 22 / 3
+    randit = math.ceil(calcs)
+    print(f"Simple random number generator : {randit % 10}")
+    seed += 1
+
+
+# Change the seed, get a new, pseudorandom number
+
+
+
+"""
+print("")
+for s in range(5):
+
+    step1 = seed / 6.7
+    # print(step1)
+    step2 = step1 - 800.33
+    # print(step2)
+    step3 = step2 ** 3 
+    # print(step3)
+    round_up = math.ceil(step3)  
+    result = round_up % 10 # remainder between 0 and 6 (never 6)
+    print("Your random num is:", result)
+
+    seed = seed * 3 
+"""
+
+
+
+random_integer = random.randint(1, 100)
+print("\nRandom number :", random_integer)
+
+random_float = random.random()
+print("Random float :", random_float)
+
+my_list = ["taco", "burrito", "enchilada", "quesadilla"]
+random_selection = random.choice(my_list)
+
+print("Random food :", random_selection)
+
+random.shuffle(my_list)
+print("Random food shuffle :", my_list)
+
+# Challenge 2: Simulate a Die Roll
+# Use the random library to simulate rolling a six-sided die.
+# The output should be a random integer between 1 and 6.
+# Store the result in a variable called "die_roll" and print it.
+
+die_rand_number = random.randint(1, 6)
+print("\nYou rolled a", die_rand_number)
+
+
+# Challenge 3: Random Square Root
+# Use random library to pick a number between 1 and 75. Store it in "num".
+# Use math library to find its square root.
+# Print the number, its square root, and the square root rounded UP with math.ceil().
+
+num = random.randint(1, 75)
+num = math.sqrt(num)
+num = math.ceil(num)
+print("The number is", num)
+
+# Challenge 4: Power Roll
+# Roll two dice with the random library: one is the "base," one is the "exponent."
+# Use math library to raise the base to the exponent. (ie, based to the POWer of exponent)
+# Print both rolls and the result as an integer (hint: int() removes the .0).
+
+base = random.randint(1, 6)
+exponent = random.randint(1, 6)
+total = base ** exponent
+print(f"You rolled a {base} & {exponent}.\nYour total was {total}.")
